@@ -86,18 +86,9 @@ class amanda::params {
       $client_package         = 'amanda-client'
       $server_package         = 'amanda-server'
       $server_provides_client = false
-      $amandad_path           = $::architecture ? {
-        x86_64 => '/usr/lib64/amanda/amandad',
-        i386   => '/usr/lib/amanda/amandad',
-      }
-      $amandaidx_path         = $::architecture ? {
-        x86_64 => '/usr/lib64/amanda/amindexd',
-        i386   => '/usr/lib/amanda/amindexd',
-      }
-      $amandataped_path       = $::architecture ? {
-        x86_64 => '/usr/lib64/amanda/amidxtaped',
-        i386   => '/usr/lib/amanda/amidxtaped',
-      }
+      $amandad_path           = '/usr/libexec/amanda/amandad'
+      $amandaidx_path         = '/usr/libexec/amanda/amindexd'
+      $amandataped_path       = '/usr/libexec/amanda/amidxtaped'
       $amanda_directories     = [
       ]
       $amanda_files           = [
