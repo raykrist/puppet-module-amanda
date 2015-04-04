@@ -83,8 +83,8 @@ class amanda::params {
       $comment                = 'Amanda admin'
       $group                  = 'disk'
       $groups                 = [ ]
-      $client_package         = 'amanda-client'
-      $server_package         = 'amanda-server'
+      $client_package         = 'amanda-backup_client'
+      $server_package         = 'amanda-backup_server'
       $server_provides_client = false
       $amandad_path           = '/usr/libexec/amanda/amandad'
       $amandaidx_path         = '/usr/libexec/amanda/amindexd'
